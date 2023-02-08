@@ -67,10 +67,10 @@ function NavbarButtom() {
             </ul>
           </div>
           <div className="flex">
-            <div className="flex items-center gap-2 p-2 border-r text-xl text-gray-500 ">
-              <FaFacebook className="hover:text-blue-900" />
-              <FaTwitter className="hover:text-sky-500" />
-              <FaInstagram className="hover:text-rose-700" />
+            <div className="flex items-center gap-2 p-2 border-r text-xl  ">
+              <FaFacebook className="hover:text-blue-900 text-blue-700" />
+              <FaTwitter className="hover:text-sky-500 text-sky-400" />
+              <FaInstagram className="hover:text-rose-700 text-rose-600" />
             </div>
             <div className="flex items-center pl-2 text-gray-500 hover:text-green-500">
               <FaPhoneAlt />
