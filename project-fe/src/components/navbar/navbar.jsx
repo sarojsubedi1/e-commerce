@@ -7,8 +7,11 @@ import {
   BiHeart,
 } from "react-icons/bi";
 import { FaPhoneAlt, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { useState } from 'react';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <>
       <div className=" border-b">
@@ -27,11 +30,24 @@ function Navbar() {
               <BiSearch />
             </button>
           </div>
-
           <div className="md:hidden flex text-gray-700  gap-2 cursor-pointer text-3xl">
             <BiSearchAlt2 />
             <BiCart />
-            <BiMenu />
+            <button onClick={() => setIsOpen(!isOpen)}><BiMenu /></button>
+            {isOpen?
+            <>
+            <div className="absolute top-0 left-0 bg-heading w-full h-screen flex justify-center content-center items-center" >
+              <button onClick={() => setIsOpen(!isOpen)} className="text-white absolute top-4 right-4" ><BiMenu /></button>
+              <ul className="flex flex-col gap-2 text-2xl uppercase font-extrabold text-green-500">
+                <li>Home</li> 
+                <li>About</li>
+                <li>Shop</li>
+                <li>Out Team</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            </>
+            :null}
           </div>
           <div className="flex-1 hidden md:flex justify-end text-gray-700 font-extrabold gap-5 cursor-pointer text-3xl">
             <BiHeart />

@@ -1,5 +1,5 @@
-import GoogleBadge from "../../images/GoogleBadge.png";
-import AppstoreBadge from "../../images/AppstoreBadge.png";
+import GoogleBadge from "../../assets/GoogleBadge.png";
+import AppstoreBadge from "../../assets/AppstoreBadge.png";
 import { FaPhoneAlt, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Footer() {
